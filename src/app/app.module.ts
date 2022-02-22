@@ -7,13 +7,15 @@ import { MyComponent } from './mycomponent.component';
 import { CourseComponent } from './course/course.component';
 import { CourseService } from './course/course.service';
 import { BooksComponent } from './books/books.component';
+import { PropertyBindingComponent } from './property-binding/property-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyComponent,
     CourseComponent,
-    BooksComponent
+    BooksComponent,
+    PropertyBindingComponent
   ],
   imports: [
     BrowserModule,
