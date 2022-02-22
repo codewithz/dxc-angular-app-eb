@@ -1,3 +1,15 @@
 <h1>{{ title }}</h1>
 <h2>{{ name }}</h2>
 <h3>Duration: {{ duration }}</h3>
+
+<!-- <ul>
+  <li>{{ courses[0] }}</li>
+  <li>{{ courses[1] }}</li>
+  <li>{{ courses[2] }}</li>
+  <li>{{ courses[3] }}</li>
+</ul> -->
+<ul>
+  <li *ngFor="let course of courses">
+    {{ course }}
+  </li>
+</ul>
