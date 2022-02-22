@@ -1,4 +1,16 @@
-<div>
+<div style="margin-left: 20px">
   <h4>Class Binding Example</h4>
-  <button class="btn btn-primary">Save</button>
+  <button class="btn btn-primary" [class.disabled]="isActive">Save</button>
+
+  <br /><br />
+
+  <button class="btn" [style.background-color]="bgColor">Other Button</button>
+
+  <br /><br />
+  <button
+    class="btn"
+    [style.background-color]="isActive ? 'dodgerblue' : 'tomato'"
+  >
+    Other Button
+  </button>
 </div>

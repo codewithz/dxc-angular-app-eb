@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClassBindingComponent implements OnInit {
 
+
+  isActive = true;
+
+  bgColor = "gold"
+
   constructor() { }
 
   ngOnInit(): void {
