@@ -11,6 +11,8 @@ export class PropertyBindingComponent implements OnInit {
 
   imageURL = "http://codewithz.com/images/camel/02.png";
 
+  colSpan = 2;
+
   constructor() { }
 
   ngOnInit(): void {
