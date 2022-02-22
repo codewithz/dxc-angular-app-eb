@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { CourseService } from './course.service';
 @Component({
   selector: 'app-course',
   templateUrl: './course.component.html',
@@ -11,15 +11,12 @@ export class CourseComponent implements OnInit {
   name = "Angular";
   duration = 8;
 
-  courses = [
-    'HTML-CSS',
-    'JavaScript',
-    'TypeScript',
-    'Angular',
-    'React'
-  ]
+  courses: string[];
 
-  constructor() { }
+  constructor(service: CourseService) {
+    // let service = new CourseService();
+    this.courses = service.getCourses();
+  }
 
   ngOnInit(): void {
   }
