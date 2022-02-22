@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { MyComponent } from './mycomponent.component';
 import { CourseComponent } from './course/course.component';
 import { CourseService } from './course/course.service';
+import { BooksComponent } from './books/books.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyComponent,
-    CourseComponent
+    CourseComponent,
+    BooksComponent
   ],
   imports: [
     BrowserModule,
