@@ -24,10 +24,10 @@ export class EventBindingComponent implements OnInit {
     console.log("Inner Div Clicked")
   }
 
-  onKeyUp(event: KeyboardEvent) {
-    if (event.key === 'Enter') {
-      console.log("Enter Pressed", event);
-    }
+  onKeyUp() {
+
+    console.log("Enter Pressed");
+
 
   }
 }
