@@ -13,8 +13,14 @@
     (click)="onInnerDivClicked()"
   >
     <h4></h4>
-    <button class="btn btn-info" (click)="onClick($event)">Save</button>
+    <button class="btn btn-info" ()="onClick($event)">Save</button>
   </div>
 </div>
 
 <div>Name : <input type="text" (keyup.enter)="onKeyUp()" /></div>
+<br /><br />
+<div>
+  Email :
+  <input type="text" #email (keyup.enter)="onEmailKeyUp(email.value)" />
+</div>
+<br /><br />

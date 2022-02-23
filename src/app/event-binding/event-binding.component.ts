@@ -28,6 +28,9 @@ export class EventBindingComponent implements OnInit {
 
     console.log("Enter Pressed");
 
+  }
 
+  onEmailKeyUp(email: string) {
+    console.log("Email is", email);
   }
 }
