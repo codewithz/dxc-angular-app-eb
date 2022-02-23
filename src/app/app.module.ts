@@ -14,6 +14,7 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { SummaryPipe } from './summary.pipe';
+import { IconsComponent } from './icons/icons.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { SummaryPipe } from './summary.pipe';
     EventBindingComponent,
     TwoWayBindingComponent,
     PipesComponent,
-    SummaryPipe
+    SummaryPipe,
+    IconsComponent
   ],
   imports: [
     BrowserModule,
