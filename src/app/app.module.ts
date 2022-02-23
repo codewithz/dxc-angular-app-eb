@@ -9,6 +9,7 @@ import { CourseService } from './course/course.service';
 import { BooksComponent } from './books/books.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
+import { EventBindingComponent } from './event-binding/event-binding.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ClassBindingComponent } from './class-binding/class-binding.component';
     CourseComponent,
     BooksComponent,
     PropertyBindingComponent,
-    ClassBindingComponent
+    ClassBindingComponent,
+    EventBindingComponent
   ],
   imports: [
     BrowserModule,
