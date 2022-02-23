@@ -4,13 +4,13 @@ import { Component, OnInit, Input } from '@angular/core';
   selector: 'favorite',
   templateUrl: './favorite.component.html',
   styleUrls: ['./favorite.component.css'],
-  inputs: ['isSelected']
+  // inputs: ['isSelected']
 })
 export class FavoriteComponent implements OnInit {
 
-  // @Input() isSelected: boolean = false;
+  @Input('isSelected') isFavorite: boolean = false;
 
-  isSelected: boolean = false;
+  //isSelected: boolean = false;
 
   constructor() { }
 
@@ -18,6 +18,6 @@ export class FavoriteComponent implements OnInit {
   }
 
   onClick() {
-    this.isSelected = !this.isSelected;
+    this.isFavorite = !this.isFavorite;
   }
 }
