@@ -15,6 +15,7 @@ import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.compon
 import { PipesComponent } from './pipes/pipes.component';
 import { SummaryPipe } from './summary.pipe';
 import { IconsComponent } from './icons/icons.component';
+import { FavoriteComponent } from './favorite/favorite.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { IconsComponent } from './icons/icons.component';
     TwoWayBindingComponent,
     PipesComponent,
     SummaryPipe,
-    IconsComponent
+    IconsComponent,
+    FavoriteComponent
   ],
   imports: [
     BrowserModule,
