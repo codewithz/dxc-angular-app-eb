@@ -1,5 +1,11 @@
 <div
-  style="margin-left: 20px; background-color: #eee; width: 200px; height: 200px"
+  style="
+    margin-left: 20px;
+    margin-bottom: 30px;
+    background-color: #eee;
+    width: 200px;
+    height: 200px;
+  "
   (click)="onOuterDivClicked()"
 >
   <div
@@ -10,3 +16,5 @@
     <button class="btn btn-info" (click)="onClick($event)">Save</button>
   </div>
 </div>
+
+<div>Name : <input type="text" (keyup)="onKeyUp($event)" /></div>
