@@ -1,6 +1,11 @@
 <div>
   <h4>Pipes</h4>
   <p>Course Name:{{ course.title | uppercase }}</p>
+  Descritption:
+  <div>
+    <p>{{ course.description }}</p>
+  </div>
+
   <p>Rating:{{ course.rating | number: "1.2-2" }}</p>
   <p>Students :{{ course.students | number }}</p>
   <p>Price:{{ course.price | currency: "INR" }}</p>
