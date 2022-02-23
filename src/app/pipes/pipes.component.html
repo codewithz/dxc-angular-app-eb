@@ -3,7 +3,7 @@
   <p>Course Name:{{ course.title | uppercase }}</p>
   Descritption:
   <div>
-    <p>{{ course.description }}</p>
+    <p>{{ course.description | summary: 60 | uppercase }}</p>
   </div>
 
   <p>Rating:{{ course.rating | number: "1.2-2" }}</p>
