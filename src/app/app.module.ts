@@ -10,6 +10,7 @@ import { BooksComponent } from './books/books.component';
 import { PropertyBindingComponent } from './property-binding/property-binding.component';
 import { ClassBindingComponent } from './class-binding/class-binding.component';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { TwoWayBindingComponent } from './two-way-binding/two-way-binding.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { EventBindingComponent } from './event-binding/event-binding.component';
     BooksComponent,
     PropertyBindingComponent,
     ClassBindingComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    TwoWayBindingComponent
   ],
   imports: [
     BrowserModule,
