@@ -13,6 +13,7 @@ export class TwoWayBindingComponent implements OnInit {
 
   ngOnInit(): void {
   }
+ 
 
   onEmailChanged() {
     console.log(this.email)
