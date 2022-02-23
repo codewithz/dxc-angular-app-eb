@@ -16,6 +16,7 @@ import { PipesComponent } from './pipes/pipes.component';
 import { SummaryPipe } from './summary.pipe';
 import { IconsComponent } from './icons/icons.component';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { TweetComponent } from './tweet/tweet.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { FavoriteComponent } from './favorite/favorite.component';
     PipesComponent,
     SummaryPipe,
     IconsComponent,
-    FavoriteComponent
+    FavoriteComponent,
+    TweetComponent
   ],
   imports: [
     BrowserModule,
