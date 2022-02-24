@@ -8,3 +8,10 @@
 </ng-template>
 
 <ng-template #noPlayers>No players added yet to the list...</ng-template>
+
+<br />
+<hr />
+<br />
+
+<div [hidden]="numbers.length === 0">List of Numbers</div>
+<div [hidden]="numbers.length > 0">No numbers in the list</div>

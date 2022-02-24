@@ -15,4 +15,6 @@ export class DirectiveIfComponent {
     'Mohammed Siraj'
   ]
 
+  numbers = [1, 2, 3];
+
 }
