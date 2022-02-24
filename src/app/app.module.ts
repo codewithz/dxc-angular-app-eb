@@ -21,6 +21,8 @@ import { PanelComponent } from './panel/panel.component';
 import { LoveComponent } from './love/love.component';
 import { InstagramComponent } from './instagram/instagram.component';
 import { InstagramFeedComponent } from './instagram-feed/instagram-feed.component';
+import { DirectiveIfComponent } from './directive-if/directive-if.component';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import { InstagramFeedComponent } from './instagram-feed/instagram-feed.componen
     PanelComponent,
     LoveComponent,
     InstagramComponent,
-    InstagramFeedComponent
+    InstagramFeedComponent,
+    DirectiveIfComponent,
+
   ],
   imports: [
     BrowserModule,
