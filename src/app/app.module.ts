@@ -17,6 +17,7 @@ import { SummaryPipe } from './summary.pipe';
 import { IconsComponent } from './icons/icons.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { TweetComponent } from './tweet/tweet.component';
+import { PanelComponent } from './panel/panel.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { TweetComponent } from './tweet/tweet.component';
     SummaryPipe,
     IconsComponent,
     FavoriteComponent,
-    TweetComponent
+    TweetComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,
