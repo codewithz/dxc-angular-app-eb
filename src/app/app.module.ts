@@ -22,6 +22,7 @@ import { LoveComponent } from './love/love.component';
 import { InstagramComponent } from './instagram/instagram.component';
 import { InstagramFeedComponent } from './instagram-feed/instagram-feed.component';
 import { DirectiveIfComponent } from './directive-if/directive-if.component';
+import { DirecticeSwitchComponent } from './directice-switch/directice-switch.component';
 
 
 @NgModule({
@@ -44,6 +45,7 @@ import { DirectiveIfComponent } from './directive-if/directive-if.component';
     InstagramComponent,
     InstagramFeedComponent,
     DirectiveIfComponent,
+    DirecticeSwitchComponent,
 
   ],
   imports: [
