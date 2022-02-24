@@ -8,11 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class DirectiveIfComponent {
 
   players = [
-    // 'Rohit Sharma',
-    // 'Virat Kohli',
-    // 'Rishabh Pant',
-    // 'Jasprit Bumrah',
-    // 'Mohammed Siraj'
+    'Rohit Sharma',
+    'Virat Kohli',
+    'Rishabh Pant',
+    'Jasprit Bumrah',
+    'Mohammed Siraj'
   ]
 
 }
