@@ -1,0 +1,16 @@
+<div>
+  <h4>ngFor Demo</h4>
+  <br />
+  <button class="btn btn-info" (click)="onAdd()">Add</button>
+  <ul>
+    <li *ngFor="let course of courses" 
+    style="margin-bottom: 10px">
+      {{ course.name }}
+      &nbsp;
+      <button
+       class="btn btn-danger" 
+       (click)="onRemove(course)">
+       Remove</button>
+    </li>
+  </ul>
+</div>

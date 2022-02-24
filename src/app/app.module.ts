@@ -24,6 +24,7 @@ import { InstagramFeedComponent } from './instagram-feed/instagram-feed.componen
 import { DirectiveIfComponent } from './directive-if/directive-if.component';
 import { DirecticeSwitchComponent } from './directice-switch/directice-switch.component';
 import { DirectiveForComponent } from './directive-for/directive-for.component';
+import { DirectiveForTrackComponent } from './directive-for-track/directive-for-track.component';
 
 
 @NgModule({
@@ -48,6 +49,7 @@ import { DirectiveForComponent } from './directive-for/directive-for.component';
     DirectiveIfComponent,
     DirecticeSwitchComponent,
     DirectiveForComponent,
+    DirectiveForTrackComponent,
 
   ],
   imports: [
