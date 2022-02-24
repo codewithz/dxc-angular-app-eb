@@ -3,5 +3,8 @@
   <p>{{ tweet.body }}</p>
   <p>{{ tweet.likes }}</p>
 
-  <favorite [isSelected]="tweet.isLiked"></favorite>
+  <favorite
+    [isSelected]="tweet.isLiked"
+    (change)="onTweetLikeStatusChanged()"
+  ></favorite>
 </div>
