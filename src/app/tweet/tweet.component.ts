@@ -13,8 +13,8 @@ export class TweetComponent {
     isLiked: true
   }
 
-  onTweetLikeStatusChanged(status: boolean) {
-    console.log("Tweet Like Status have been changed...", status);
+  onTweetLikeStatusChanged(data: {}) {
+    console.log("Tweet Like Status have been changed...", data);
   }
 
 }
