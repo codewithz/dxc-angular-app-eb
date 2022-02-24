@@ -5,6 +5,6 @@
 
   <favorite
     [isSelected]="tweet.isLiked"
-    (change)="onTweetLikeStatusChanged()"
+    (change)="onTweetLikeStatusChanged($event)"
   ></favorite>
 </div>
