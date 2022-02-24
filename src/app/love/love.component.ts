@@ -12,7 +12,7 @@ export class LoveComponent {
   @Output() change = new EventEmitter();
 
   onClick() {
-    this.isSelected = !this.isSelected;
+    //  this.isSelected = !this.isSelected;
     this.change.emit();
   }
 

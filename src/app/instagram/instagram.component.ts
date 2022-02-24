@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-instagram',
@@ -7,14 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InstagramComponent {
 
+  @Input('image') image: string = 'http://shorturl.at/orJNZ';
+
+
   post = {
     account: 'codewithz',
-    image: 'https://images.unsplash.com/photo-1606228281437-dc226988dc3a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8MTkyMCUyMHglMjAxMDgwfGVufDB8fDB8fA%3D%3D&w=1000&q=80',
+    image: this.image,
     likesCount: 123,
     isLiked: false
   }
 
   onPostLikeEvent() {
+    console.log(this.image)
     this.post.likesCount += (this.post.isLiked) ? -1 : +1;
     this.post.isLiked = !this.post.isLiked;
   }

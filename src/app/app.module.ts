@@ -20,6 +20,7 @@ import { TweetComponent } from './tweet/tweet.component';
 import { PanelComponent } from './panel/panel.component';
 import { LoveComponent } from './love/love.component';
 import { InstagramComponent } from './instagram/instagram.component';
+import { InstagramFeedComponent } from './instagram-feed/instagram-feed.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { InstagramComponent } from './instagram/instagram.component';
     TweetComponent,
     PanelComponent,
     LoveComponent,
-    InstagramComponent
+    InstagramComponent,
+    InstagramFeedComponent
   ],
   imports: [
     BrowserModule,
