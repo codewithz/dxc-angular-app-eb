@@ -18,6 +18,8 @@ import { IconsComponent } from './icons/icons.component';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { TweetComponent } from './tweet/tweet.component';
 import { PanelComponent } from './panel/panel.component';
+import { LoveComponent } from './love/love.component';
+import { InstagramComponent } from './instagram/instagram.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { PanelComponent } from './panel/panel.component';
     IconsComponent,
     FavoriteComponent,
     TweetComponent,
-    PanelComponent
+    PanelComponent,
+    LoveComponent,
+    InstagramComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,14 @@
+<app-panel>
+  <div class="container heading" style="text-align: center; margin-left: 0px">
+    <b>{{ post.account }}</b>
+  </div>
+
+  <div class="container body" style="text-align: center">
+    <img [src]="post.image" alt="" style="width: 300px; height: 200px" />
+    <app-love
+      [isSelected]="post.isLiked"
+      (change)="onPostLikeEvent()"
+    ></app-love>
+    Likes : {{ post.likesCount }}
+  </div>
+</app-panel>
