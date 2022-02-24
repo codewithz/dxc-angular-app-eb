@@ -10,7 +10,7 @@ export class FavoriteComponent implements OnInit {
 
   @Input('isSelected') isFavorite: boolean = false;
 
-  @Output() change = new EventEmitter();
+  @Output('change') change = new EventEmitter();
 
   //isSelected: boolean = false;
 
