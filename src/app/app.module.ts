@@ -26,6 +26,8 @@ import { DirecticeSwitchComponent } from './directice-switch/directice-switch.co
 import { DirectiveForComponent } from './directive-for/directive-for.component';
 import { DirectiveForTrackComponent } from './directive-for-track/directive-for-track.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
+import { InputFormatDirective } from './input-format.directive';
+import { InputTestComponent } from './input-test/input-test.component';
 
 
 @NgModule({
@@ -52,6 +54,8 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
     DirectiveForComponent,
     DirectiveForTrackComponent,
     NgStyleComponent,
+    InputFormatDirective,
+    InputTestComponent,
 
   ],
   imports: [
