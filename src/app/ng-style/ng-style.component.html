@@ -1,0 +1,21 @@
+<div>
+  <h4>ng Style Demo</h4>
+  <button
+    class="btn"
+    [ngStyle]="{
+      backgroundColor: canSave ? 'greenyellow' : 'blueviolet',
+      color: canSave ? 'black' : 'white',
+      fontWeight: canSave ? 'bold' : 'normal'
+    }"
+  >
+    Save
+  </button>
+  <!-- <button
+    class="btn"
+    [style.backgroundColor]="canSave ? 'greenyellow' : 'deeppink'"
+    [style.color]="canSave ? 'black' : 'white'"
+    [style.fontWeight]="canSave ? 'bold' : 'normal'"
+  >
+    Save
+  </button> -->
+</div>

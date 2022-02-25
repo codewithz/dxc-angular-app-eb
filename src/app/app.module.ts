@@ -25,6 +25,7 @@ import { DirectiveIfComponent } from './directive-if/directive-if.component';
 import { DirecticeSwitchComponent } from './directice-switch/directice-switch.component';
 import { DirectiveForComponent } from './directive-for/directive-for.component';
 import { DirectiveForTrackComponent } from './directive-for-track/directive-for-track.component';
+import { NgStyleComponent } from './ng-style/ng-style.component';
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import { DirectiveForTrackComponent } from './directive-for-track/directive-for-
     DirecticeSwitchComponent,
     DirectiveForComponent,
     DirectiveForTrackComponent,
+    NgStyleComponent,
 
   ],
   imports: [
