@@ -43,8 +43,14 @@ export class PostsComponent implements OnInit {
           this.posts.splice(0, 0, newPost);
           input.value = ''
         },
-        (error) => {
-          alert('Some unexpected error has occurred!!')
+        (error: Response) => {
+          if (error.status === 400) {
+            alert('Bad Request detected');
+          }
+          else {
+            alert('Some unexpected error has occurred!!')
+
+          }
           console.log(error);
         }
       )
@@ -72,8 +78,13 @@ export class PostsComponent implements OnInit {
           let index = this.posts.indexOf(post);
           this.posts.splice(index, 1);
         },
-        (error) => {
-          alert('Some unexpected error has occurred!!')
+        (error: Response) => {
+          if (error.status === 404) {
+            alert('Post is already deleted');
+          }
+          else {
+            alert('Some unexpected error has occurred!!')
+          }
           console.log(error);
         }
       )

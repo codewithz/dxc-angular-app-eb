@@ -7,7 +7,7 @@ import { Post } from './post.model';
 })
 export class PostsService {
 
-  private url = 'https://abcdefjsonplaceholder.typicode.com/posts';
+  private url = 'https://jsonplaceholder.typicode.com/posts';
 
 
   constructor(private http: HttpClient) { }
@@ -26,6 +26,6 @@ export class PostsService {
   }
 
   deletePost(id: number) {
-    return this.http.delete(this.url + "/" + id);
+    return this.http.delete(this.url + "/zartab/" + id);
   }
 }
