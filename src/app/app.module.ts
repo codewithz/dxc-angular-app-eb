@@ -31,6 +31,7 @@ import { InputFormatDirective } from './input-format.directive';
 import { InputTestComponent } from './input-test/input-test.component';
 import { StudentComponent } from './student/student.component';
 import { PostsComponent } from './posts/posts.component';
+import { GithubFollowersComponent } from './github-followers/github-followers.component';
 
 
 @NgModule({
@@ -61,6 +62,7 @@ import { PostsComponent } from './posts/posts.component';
     InputTestComponent,
     StudentComponent,
     PostsComponent,
+    GithubFollowersComponent,
 
   ],
   imports: [

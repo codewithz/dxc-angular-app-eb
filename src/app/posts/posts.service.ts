@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Post } from './post.model';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -26,6 +27,7 @@ export class PostsService {
   }
 
   deletePost(id: number) {
-    return this.http.delete(this.url + "/zartab/" + id);
+    return this.http.delete(this.url + "/" + id);
+
   }
 }
