@@ -24,6 +24,10 @@ export class PostsComponent implements OnInit {
       .subscribe(
         (response) => {
           this.posts = response;
+        },
+        (error) => {
+          alert('Some unexpected error has occurred!!')
+          console.log(error);
         }
       )
   }
@@ -38,6 +42,10 @@ export class PostsComponent implements OnInit {
           newPost.id = id;
           this.posts.splice(0, 0, newPost);
           input.value = ''
+        },
+        (error) => {
+          alert('Some unexpected error has occurred!!')
+          console.log(error);
         }
       )
   }
@@ -48,6 +56,10 @@ export class PostsComponent implements OnInit {
       .subscribe(
         (response) => {
           console.log(response)
+        },
+        (error) => {
+          alert('Some unexpected error has occurred!!')
+          console.log(error);
         }
       )
   }
@@ -59,6 +71,10 @@ export class PostsComponent implements OnInit {
         (response) => {
           let index = this.posts.indexOf(post);
           this.posts.splice(index, 1);
+        },
+        (error) => {
+          alert('Some unexpected error has occurred!!')
+          console.log(error);
         }
       )
 
