@@ -28,6 +28,7 @@ import { DirectiveForTrackComponent } from './directive-for-track/directive-for-
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { InputFormatDirective } from './input-format.directive';
 import { InputTestComponent } from './input-test/input-test.component';
+import { StudentComponent } from './student/student.component';
 
 
 @NgModule({
@@ -56,6 +57,7 @@ import { InputTestComponent } from './input-test/input-test.component';
     NgStyleComponent,
     InputFormatDirective,
     InputTestComponent,
+    StudentComponent,
 
   ],
   imports: [
