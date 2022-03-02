@@ -32,6 +32,7 @@ import { InputTestComponent } from './input-test/input-test.component';
 import { StudentComponent } from './student/student.component';
 import { PostsComponent } from './posts/posts.component';
 import { GithubFollowersComponent } from './github-followers/github-followers.component';
+import { ObservablePipeComponent } from './observable-pipe/observable-pipe.component';
 
 
 @NgModule({
@@ -63,6 +64,7 @@ import { GithubFollowersComponent } from './github-followers/github-followers.co
     StudentComponent,
     PostsComponent,
     GithubFollowersComponent,
+    ObservablePipeComponent,
 
   ],
   imports: [

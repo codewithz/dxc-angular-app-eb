@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Post } from './post.model';
+import { catchError } from 'rxjs/operators';
+import { Observable } from 'rxjs';
 
 
 @Injectable({
@@ -29,5 +31,9 @@ export class PostsService {
   deletePost(id: number) {
     return this.http.delete(this.url + "/" + id);
 
+
   }
+
+
+
 }
