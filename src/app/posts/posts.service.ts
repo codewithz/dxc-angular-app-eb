@@ -2,7 +2,10 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Post } from './post.model';
 import { catchError } from 'rxjs/operators';
-import { Observable } from 'rxjs';
+import { throwError } from 'rxjs';
+import { AppError } from './../common/app-error';
+import { NotFoundError } from './../common/not-found-error';
+import { BadInput } from './../common/bad-input';
 
 
 @Injectable({
@@ -20,7 +23,19 @@ export class PostsService {
   }
 
   createPost(post: Post) {
-    return this.http.post<Post>(this.url, JSON.stringify(post));
+    return this.http.post<Post>(this.url, JSON.stringify(post))
+      .pipe(
+        catchError(
+          (error: Response) => {
+            if (error.status === 400) {
+              return throwError(new BadInput())
+            }
+            else {
+              return throwError(new AppError(error))
+            }
+          }
+        )
+      )
   }
 
   updatePost(post: Post) {
@@ -29,7 +44,20 @@ export class PostsService {
   }
 
   deletePost(id: number) {
-    return this.http.delete(this.url + "/" + id);
+    return this.http.delete(this.url + "/zartab/" + id)
+      .pipe(
+        catchError(
+          (error: Response) => {
+            console.log("Generated Error in catchError", error);
+            if (error.status === 404) {
+              return throwError(new NotFoundError())
+            }
+            else {
+              return throwError(new AppError(error))
+            }
+          }
+        )
+      )
 
 
   }

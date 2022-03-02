@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Post } from './post.model';
 import { PostsService } from './posts.service';
+import { AppError } from './../common/app-error';
+import { NotFoundError } from './../common/not-found-error';
+import { BadInput } from './../common/bad-input';
 
 @Component({
   selector: 'app-posts',
@@ -43,8 +46,8 @@ export class PostsComponent implements OnInit {
           this.posts.splice(0, 0, newPost);
           input.value = ''
         },
-        (error: Response) => {
-          if (error.status === 400) {
+        (error: AppError) => {
+          if (error instanceof BadInput) {
             alert('Bad Request detected');
           }
           else {
@@ -78,8 +81,8 @@ export class PostsComponent implements OnInit {
           let index = this.posts.indexOf(post);
           this.posts.splice(index, 1);
         },
-        (error: Response) => {
-          if (error.status === 404) {
+        (error: AppError) => {
+          if (error instanceof NotFoundError) {
             alert('Post is already deleted');
           }
           else {
