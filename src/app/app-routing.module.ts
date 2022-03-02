@@ -4,10 +4,12 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PostsComponent } from './posts/posts.component';
 import { GithubFollowersComponent } from './github-followers/github-followers.component';
+import { GithubProfileComponent } from './github-profile/github-profile.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'posts', component: PostsComponent },
+  { path: 'followers/:user', component: GithubProfileComponent },
   { path: 'followers', component: GithubFollowersComponent },
   { path: '**', component: NotFoundComponent },
 
