@@ -36,6 +36,7 @@ import { ObservablePipeComponent } from './observable-pipe/observable-pipe.compo
 
 import { ErrorHandler } from '@angular/core';
 import { AppErrorHandler } from './common/app-error-handler';
+import { CloneGithubFollowerComponent } from './clone-github-follower/clone-github-follower.component';
 
 @NgModule({
   declarations: [
@@ -67,6 +68,7 @@ import { AppErrorHandler } from './common/app-error-handler';
     PostsComponent,
     GithubFollowersComponent,
     ObservablePipeComponent,
+    CloneGithubFollowerComponent,
 
   ],
   imports: [
