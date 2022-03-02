@@ -37,6 +37,10 @@ import { ObservablePipeComponent } from './observable-pipe/observable-pipe.compo
 import { ErrorHandler } from '@angular/core';
 import { AppErrorHandler } from './common/app-error-handler';
 import { CloneGithubFollowerComponent } from './clone-github-follower/clone-github-follower.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { GithubProfileComponent } from './github-profile/github-profile.component';
+import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -69,6 +73,10 @@ import { CloneGithubFollowerComponent } from './clone-github-follower/clone-gith
     GithubFollowersComponent,
     ObservablePipeComponent,
     CloneGithubFollowerComponent,
+    NavbarComponent,
+    GithubProfileComponent,
+    HomeComponent,
+    NotFoundComponent,
 
   ],
   imports: [
