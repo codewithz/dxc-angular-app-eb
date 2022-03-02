@@ -47,7 +47,7 @@ export class PostsComponent implements OnInit {
             alert('Bad Request detected');
           }
           else throw error;
-          console.log(error);
+          
         }
       )
   }
@@ -76,7 +76,7 @@ export class PostsComponent implements OnInit {
             alert('Post is already deleted');
           }
           else throw error;
-          console.log(error);
+        
         }
       )
 
