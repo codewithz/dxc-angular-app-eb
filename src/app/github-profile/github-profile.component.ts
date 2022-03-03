@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { combineLatest } from 'rxjs';
 
 @Component({
@@ -11,7 +11,12 @@ export class GithubProfileComponent implements OnInit {
 
   id: string = 'No ID yet';
   repos: string = '0'
-  constructor(private route: ActivatedRoute) { }
+  constructor(private router: Router,
+     private route: ActivatedRoute) { }
+
+  goBack() {
+    this.router.navigate(['/followers'])
+  }
 
   ngOnInit(): void {
 
@@ -49,5 +54,7 @@ export class GithubProfileComponent implements OnInit {
       }
     )
   }
+
+ 
 
 }
