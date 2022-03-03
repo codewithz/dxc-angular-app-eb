@@ -12,6 +12,9 @@ export class GithubProfileComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
+
+    console.log("Github Profile OnInit()")
+
     this.route.paramMap
       .subscribe(
         (params) => {
