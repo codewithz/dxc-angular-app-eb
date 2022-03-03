@@ -12,7 +12,7 @@ export class GithubProfileComponent implements OnInit {
   id: string = 'No ID yet';
   repos: string = '0'
   constructor(private router: Router,
-     private route: ActivatedRoute) { }
+    private route: ActivatedRoute) { }
 
   goBack() {
     this.router.navigate(['/followers'])
@@ -55,6 +55,6 @@ export class GithubProfileComponent implements OnInit {
     )
   }
 
- 
+
 
 }
